@@ -1,0 +1,531 @@
+@import url('https://fonts.google.com/specimen/Ubuntu+Condensed?query=Ubuntu');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #5d94fc;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(rgb(223, 224, 224), #0059ff);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    z-index: 1;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 40px;
+    position: absolute;
+    /*right: 35px;*/
+    top: 95px;
+    display: none;
+}
+
+#logo {
+    display: flex;
+    text-align: center;
+    width: 105%;
+    height: 100px;
+}
+
+#titulo {
+    letter-spacing: 3px;
+    margin: auto;
+    padding-right: 900px;
+    font-size: 2em;
+    font-family: 'Ubuntu Condensed';
+    text-transform: uppercase;
+    color: #ccc;
+    text-shadow: #000 1px 1px;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #6f9ff7;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #f53232e3;
+    border-radius: 5rem;
+}
+
+.C-title {
+    background-image: url(imgs/mercado1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 1000px;
+    margin-top: 150px;
+
+}
+
+.C-title h1 {
+    color: rgb(248, 236, 234);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.8rem;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 13%;
+
+}
+
+
+.C-title button {
+    margin-top: 2rem;
+    background-color: #6f9ff7;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-right: 5;
+    margin-left: 46%;
+}
+
+.C-title button:hover {
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+a .fa-user {
+    padding-right: 100px;
+    padding-top: 50px;
+    text-decoration: none;
+    color: #000;
+}
+
+a .fa-truck-fast {
+    padding-right: 100px;
+    padding-top: 50px;
+    text-decoration: none;
+    color: #000000;
+}
+
+a .fa-cart-shopping {
+    padding-top: 50px;
+    padding-right: 150px;
+    text-decoration: none;
+    color: #000000;
+}
+
+a .fa-bars {
+    padding-top: 50px;
+    padding-right: 50px;
+    display: none;
+    text-decoration: none;
+}
+
+
+#links {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    font-size: 1.0em;
+    background: #f53232e3;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+#links a:hover,
+button:hover {
+    background: #b4bed171;
+    color: black;
+    border-radius: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#img img {
+    height: 100px;
+    padding-top: 0;
+    padding-top: 7px;
+
+}
+
+.card {
+    width: 300px;
+    height: 280px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 25px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff
+}
+
+.card figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card figure img {
+    margin-top: 30px;
+    width: 80%;
+    height: 120px;
+    width: 110px;
+}
+
+.legenda {
+    font-size: 1em;
+    padding-left: 10px;
+    text-align: center;
+
+}
+
+.preco {
+    margin-top: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: green;
+    text-align: center;
+
+}
+
+#carnes,
+#eletronicos,
+#limpeza,
+#bebidas,
+#doces,
+#vegetais {
+    padding-left: 40px;
+    padding-top: 15px;
+    margin: auto;
+    padding-top: 150px;
+
+}
+
+.card figcaption {
+    text-align: left;
+
+}
+
+.botao {
+    background: #f00;
+    width: 84%;
+    border-radius: 15px;
+    height: 40px;
+    padding-top: 5px;
+    color: #fff;
+    font-size: 1em;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.botao:hover {
+    background-color: #538bf1;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    color: rgb(255, 0, 0);
+    font-size: 1em;
+    z-index: 2;
+    height: 280px;
+    border: black 1px solid;
+    transform: translateY(-10px);
+}
+
+footer {
+    height: 80px;
+    background-color: #ccc;
+}
+
+#redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+#rgm {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+#carnes,
+#eletronicos,
+#bebidas,
+#doces,
+#vegetais,
+#limpeza {
+    width: 100%;
+    margin: auto;
+}
+
+#carnes {
+    background-image: url(imgs/churrasco.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#eletronicos {
+    background-image: url(imgs/eletronicos.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#limpeza {
+    background-image: url(imgs/limpeza.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#vegetais {
+    background-image: url(imgs/vegetais.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#doces {
+    background-image: url(imgs/doces.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#bebidas {
+    background-image: url(imgs/drinks.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#contato {
+    background: linear-gradient(#0059ff, rgb(223, 224, 224));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+input,
+textarea {
+    display: block;
+    background-color: rgb(195, 207, 207);
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    margin-left: 180px;
+}
+
+#contato button {
+    font-size: 18pt;
+    width: 48%;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(69, 50, 155);
+    height: 50px;
+    color: azure;
+    margin-left: 180px;
+    margin-bottom: 10px;
+}
+
+#contato figure {
+    margin: auto;
+}
+
+#contato img {
+    width: 250px;
+}
+
+.fita {
+    background: #e51c46;
+    position: relative;
+    margin: 20px auto;
+    width: 300px;
+    color: #ffffff;
+    line-height: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.fita:before,
+.fita:after {
+    content: '';
+    line-height: 0;
+    border-style: solid;
+    border-width: 20px;
+    position: absolute;
+    top: 10px;
+    z-index: -2000;
+    width: 5px;
+}
+
+.fita:before {
+    border-color: #bc1438 #bc1438 #bc1438 transparent;
+    left: -35px;
+}
+
+.fita:after {
+    border-color: #bc1438 transparent #bc1438 #bc1438;
+    right: -35px;
+}
+
+.conteudo:before,
+.conteudo:after {
+    position: absolute;
+    content: '';
+    height: 0;
+    line-height: 1px;
+    border-style: solid;
+    border-width: 5px;
+    z-index: -1999;
+}
+
+.conteudo:before {
+    border-color: #940d2a #940d2a transparent transparent;
+    bottom: -10px;
+    left: 0;
+}
+
+.conteudo:after {
+    border-color: #940d2a transparent transparent #940d2a;
+    bottom: -10px;
+    right: 0;
+}
+
+footer {
+    background-color: rgb(223, 224, 224);
+}
+
+@media (max-width: 780px) {
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    #links {
+        text-align: center;
+        background: linear-gradient(rgb(223, 224, 224), #caddff)
+    }
+
+    #links a {
+        display: none;
+    }
+
+    #titulo {
+        display: none;
+    }
+
+    #logo {
+        display: flex;
+        width: 10%;
+        position: absolute;
+        flex-direction: column;
+
+    }
+
+    header {
+        width: 10%;
+        height: 100%;
+    }
+
+    header button {
+        display: block;
+    }
+
+
+    #container {
+        padding-left: 50px;
+        width: 100%;
+    }
+
+    .card {
+        width: 200px;
+        margin-left: 100px;
+    }
+
+    #contato {
+        display: flex;
+        padding: 0;
+        margin-left: -100px;
+    }
+
+    #contato img {
+        display: none;
+    }
+
+    .C-title {
+        display: none;
+    }
+
+    #logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    a .fa-user {
+        padding-top: 600px;
+
+    }
+
+    #rgm {
+        display: none;
+    }
+
+    #redes {
+        padding-top: 25px;
+        padding-left: 25px;
+    }
+
+    .fita {
+        margin-left: 77px;
+    }
+
+}
